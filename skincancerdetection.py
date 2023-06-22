@@ -21,8 +21,8 @@ def input_data(folder_path, output_data):
             output_data.append([resized, class_name])
     return output_data
 
-train_data = input_data("D:/python/skin cancer detection/train", [])
-test_data = input_data("D:/python/skin cancer detection/test", [])
+train_data = input_data("skin cancer detection/train", [])
+test_data = input_data("skin cancer detection/test", [])
 np.random.shuffle(train_data)
 np.random.shuffle(test_data)
 train_images, train_labels = zip(*train_data)
